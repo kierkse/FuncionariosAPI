@@ -28,7 +28,7 @@ namespace FuncionariosAPI
         {
             services.AddMvc();
             services.AddControllers();
-            services.AddSqlDependency();
+            services.AddSqlDependency(Configuration);
             services.AddRepositoryDependency();
             services.AddServiceDependency();
             services.AddSwaggerDependency();

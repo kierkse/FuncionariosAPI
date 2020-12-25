@@ -16,11 +16,11 @@ namespace FuncionariosAPI.Infra.Data.Context
 
         public DbSet<Funcionario> Funcionarios { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=localhost;Database=DefaultDb;uid=sa;password=admin123;Integrated Security=True;",
-                builder => builder.EnableRetryOnFailure());
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     optionsBuilder.UseSqlServer("",
+        //         builder => builder.EnableRetryOnFailure());
+        // }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
